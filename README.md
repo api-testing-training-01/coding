@@ -1,6 +1,6 @@
 # coding
 
-[![Build status](https://travis-ci.com/api-testing-training-01/coding.svg?branch=develop)](https://travis-ci.com/api-testing-training-01/coding) 
+[![Build Status](https://travis-ci.com/api-testing-training-01/coding.svg?branch=develop)](https://travis-ci.com/api-testing-training-01/coding) 
 
 [![Code Coverage](https://img.shields.io/codecov/c/github/api-testing-training-01/coding/develop.svg)](https://codecov.io/github/api-testing-training-01/coding?branch=develop)
 
