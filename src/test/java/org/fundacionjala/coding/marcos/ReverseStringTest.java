@@ -11,6 +11,6 @@ public class ReverseStringTest {
         String input = "abcd";
         String expectedOut = "dcba";
         String actual = ReverseString.invert(input);
-        assertEquals(expectedOut,actual);
+        assertEquals(expectedOut, actual);
     }
 }

@@ -1,7 +1,12 @@
 package org.fundacionjala.coding.marcos;
 
-public class ReverseString {
-    public static String invert(String input) {
+public final class ReverseString {
+
+    private ReverseString() {
+
+    }
+
+    public static String invert(final String input) {
         return new StringBuilder(input).reverse().toString();
     }
 }
