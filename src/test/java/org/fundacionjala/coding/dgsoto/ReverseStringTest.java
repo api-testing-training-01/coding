@@ -17,7 +17,7 @@ public class ReverseStringTest {
     @Test
     public void test2ReverseString() {
         String expectedString = "Hey fellow warriors";
-        String inputString = "yeH wollef sroirraw";
+        String inputString = "Hey wollef sroirraw";
         String actualString = ReverseString.invertString(inputString);
         assertEquals(expectedString, actualString);
     }
@@ -32,7 +32,7 @@ public class ReverseStringTest {
 
     @Test
     public void test4ReverseString() {
-        String expectedString = "abc";
+        String expectedString = "cba";
         String inputString = "cba";
         String actualString = ReverseString.invertString(inputString);
         assertEquals(expectedString, actualString);
@@ -44,5 +44,16 @@ public class ReverseStringTest {
         String inputString = "esruoc noitamotua";
         String actualString = ReverseString.invertString(inputString);
         assertEquals(expectedString, actualString);
+    }
+
+    @Test
+    public void test6ReverseString() {
+        assertEquals("_ala_", ReverseString.invertString("_ala_"));
+        assertEquals("_omo", ReverseString.invertString("_omo"));
+        assertEquals(null, ReverseString.invertString(""));
+        assertEquals(null, ReverseString.invertString("     "));
+        assertEquals("Hey fellow warriors", ReverseString.invertString("Hey wollef sroirraw"));
+        assertEquals("This is a test", ReverseString.invertString("This is a test"));
+        assertEquals("This is another test", ReverseString.invertString("This is rehtona test"));
     }
 }
