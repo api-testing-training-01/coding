@@ -14,7 +14,7 @@ public class ReverseStringTest {
     }
 
     @Test
-    public void NegativeReverseString() {
+    public void negativeReverseString() {
         String input = " prueba de inversion";
         String expectedString = "negative noisrevni ed abeurp";
         String process = ReverseString.reverse(input);
