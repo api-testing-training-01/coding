@@ -1,16 +1,15 @@
 package org.fundacionjala.coding.jacky;
 
 public class SpinWords {
-    public String spinWords(String sentence){
+    public String spinWords(final String sentence) {
         StringBuilder reverseString = new StringBuilder();
         String[] words = sentence.split(" ");
-
+        final int sizeWord = 4;
         for (String word : words) {
-            if (word.length()>4){
+            if (word.length() > sizeWord) {
                 String reverseWord = new StringBuilder(word).reverse().toString();
                 reverseString.append(reverseWord + " ");
-            }
-            else {
+            } else {
                 reverseString.append(word + " ");
             }
         }
