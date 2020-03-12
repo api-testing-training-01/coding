@@ -1,6 +1,5 @@
 package org.fundacionjala.coding.jorge;
 
-import org.fundacionjala.coding.jorge.SpinWords;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
