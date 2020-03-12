@@ -1,13 +1,19 @@
 package org.fundacionjala.coding;
 
-public class SpinWords {
+public final class SpinWords {
 
-    public static String convertToSpin(String text) {
+    private static final int WORD_LENGTH = 4;
+
+    private SpinWords() {
+
+    }
+
+    public static String convertToSpin(final String text) {
         String[] splitText = text.split(" ");
         String spinResult = "";
-        for (int i=0 ; i< splitText.length ; i++) {
+        for (int i = 0; i < splitText.length; i++) {
             String word = splitText[i];
-            if (!word.isEmpty() && word.length() > 4) {
+            if (!word.isEmpty() && word.length() > WORD_LENGTH) {
                 spinResult += new StringBuilder(word).reverse().toString();
                 spinResult += " ";
             } else {

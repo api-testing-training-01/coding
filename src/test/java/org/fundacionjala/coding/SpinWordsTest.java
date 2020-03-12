@@ -6,6 +6,7 @@ import static org.junit.Assert.assertEquals;
 
 public class SpinWordsTest {
 
+
     @Test
     public void spinWordsOne() {
         String text = "Hey fellow warriors";
