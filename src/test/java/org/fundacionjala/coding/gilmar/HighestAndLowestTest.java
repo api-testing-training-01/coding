@@ -6,10 +6,17 @@ import org.junit.Test;
 public class HighestAndLowestTest {
 
     @Test
-    public void inputIsNotEmptyString() {
+    public void inputHasAlmostOneValue() {
         String input = " 12";
         boolean process = HighestAndLowest.inputIsEmpty(input);
         Assert.assertTrue(process);
+    }
+
+    @Test
+    public void inputIsNotEmptyString() {
+        String input = "";
+        boolean process = HighestAndLowest.inputIsEmpty(input);
+        Assert.assertFalse(process);
     }
 
     @Test
@@ -21,10 +28,11 @@ public class HighestAndLowestTest {
 
     @Test
     public void highestAndLowest() {
-        String input = "512 12 -15 6 9";
-        String expectedString = "512 -15";
-        String process = HighestAndLowest.resultHighestAndLowest(input);
-        Assert.assertEquals(expectedString, process);
+        Assert.assertEquals("512 -15", HighestAndLowest.resultHighestAndLowest("512 12 -15 6 9"));
+        Assert.assertEquals("-1 -10", HighestAndLowest.resultHighestAndLowest("-1 -2 -3 -10"));
+        Assert.assertEquals("2 -10", HighestAndLowest.resultHighestAndLowest("-1 2 -3 -10"));
+        Assert.assertEquals("2 2", HighestAndLowest.resultHighestAndLowest("2"));
+        Assert.assertEquals("12 10", HighestAndLowest.resultHighestAndLowest("11 12 11 10"));
     }
 
     @Test
