@@ -24,6 +24,6 @@ public final class HighestAndLowest {
                 low = Integer.parseInt(numbersList[i]);
             }
         }
-        return (new StringBuilder()).append(high).append(" ").append(low).toString();
+        return new StringBuilder().append(high).append(" ").append(low).toString();
     }
 }

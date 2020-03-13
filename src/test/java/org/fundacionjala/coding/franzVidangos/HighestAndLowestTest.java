@@ -9,7 +9,6 @@ public class HighestAndLowestTest {
     public void inSecuence() {
         String expectedOut = "5 1";
         String actual = HighestAndLowest.highAndLow("1 2 3 4 5");
-        System.out.println(actual);
         assertEquals(expectedOut, actual);
     }
 
