@@ -73,7 +73,7 @@ public final class HighestAndLowest {
     public static boolean firstResultIsHighest(final String result) {
         boolean isHighest;
         String[] compare = result.split(" ");
-        if (Integer.parseInt(compare[0]) > Integer.parseInt(compare[1])) {
+        if (Integer.parseInt(compare[0]) >= Integer.parseInt(compare[1])) {
             isHighest = true;
         } else {
             isHighest = false;
