@@ -8,10 +8,13 @@ public final class HighestAndLowest {
     }
 
     public static boolean inputIsEmpty(final String input) {
-        boolean isEmpty = false;
+        boolean isEmpty;
         if (!input.equals("")) {
             isEmpty = true;
+        } else {
+            isEmpty = false;
         }
+
         return isEmpty;
     }
 
@@ -68,10 +71,12 @@ public final class HighestAndLowest {
     }
 
     public static boolean firstResultIsHighest(final String result) {
-        boolean isHighest = false;
+        boolean isHighest;
         String[] compare = result.split(" ");
-        if (Integer.parseInt(compare[0]) >= Integer.parseInt(compare[1])) {
+        if (Integer.parseInt(compare[0]) > Integer.parseInt(compare[1])) {
             isHighest = true;
+        } else {
+            isHighest = false;
         }
 
         return isHighest;
