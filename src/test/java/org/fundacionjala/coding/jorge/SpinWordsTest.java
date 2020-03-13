@@ -28,4 +28,12 @@ public class SpinWordsTest {
         String actualText = SpinWords.convertToSpin(text);
         assertEquals(expectedResult, actualText);
     }
+
+    @Test
+    public void spinWordsFour() {
+        String text = "this this      this";
+        String expectedResult = "this this      this";
+        String actualText = SpinWords.convertToSpin(text);
+        assertEquals(expectedResult, actualText);
+    }
 }
