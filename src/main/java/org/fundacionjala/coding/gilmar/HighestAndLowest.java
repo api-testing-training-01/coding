@@ -78,7 +78,6 @@ public final class HighestAndLowest {
         } else {
             isHighest = false;
         }
-
         return isHighest;
     }
 }
