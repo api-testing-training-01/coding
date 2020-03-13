@@ -22,6 +22,6 @@ public final class SpinWords {
             }
         }
 
-        return spinResult.substring(0, spinResult.length() - 1);
+        return spinResult.trim();
     }
 }
