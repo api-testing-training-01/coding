@@ -1,13 +1,14 @@
 package org.fundacionjala.coding.JoseEguivar;
 
 public class SpinWords {
-    public String spinWords(String sentence) {
-        //TODO: Code stuff here
+    public String spinWords(final String sentence) {
         String[] array = sentence.split(" ");
-        for(int i=0;i<array.length;i++){
-            if(array[i].length() >= 5)
+        final int number = 5;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].length() >= number) {
                 array[i] = new StringBuffer(array[i]).reverse().toString();
+            }
         }
-        return String.join(" ",array);
+        return String.join(" ", array);
     }
 }
