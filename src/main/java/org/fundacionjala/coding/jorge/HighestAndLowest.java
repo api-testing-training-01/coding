@@ -16,6 +16,6 @@ public final class HighestAndLowest {
                 return Integer.valueOf(s).compareTo(Integer.valueOf(t1));
             }
         });
-        return numbers[numbers.length - 1] + " " + numbers[0];
+        return new StringBuilder().append(numbers[numbers.length - 1]).append(" ").append(numbers[0]).toString();
     }
 }
