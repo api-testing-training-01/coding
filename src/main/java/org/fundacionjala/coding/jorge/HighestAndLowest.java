@@ -18,5 +18,4 @@ public final class HighestAndLowest {
         });
         return numbers[numbers.length - 1] + " " + numbers[0];
     }
-
 }
