@@ -35,12 +35,10 @@ public class SpinWords {
 
         int i = 0, j = word5.length() - 1;
         while (i < j) {
-            while ((i < j) && (!Character.isLetter(word5.charAt(i)))) {
+            while ((i < j) && (!Character.isLetter(word5.charAt(i))))
                 i++;
-            }
-            while ((i < j) && (!Character.isLetter(word5.charAt(j)))) {
+            while ((i < j) && (!Character.isLetter(word5.charAt(j))))
                 j--;
-            }
             char tmp = word5.charAt(i);
             res.setCharAt(i, word5.charAt(j));
             res.setCharAt(j, tmp);
