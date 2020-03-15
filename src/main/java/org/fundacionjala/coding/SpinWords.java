@@ -15,12 +15,12 @@ public class SpinWords {
      */
     public String spinWords(final String sentence) {
         //Streaming string to filter by length to apply reverse
-        final int LIMIT_LENGTH = 5;
+        final int limitLength = 5;
        List<String> sentenceArray = Arrays.asList(sentence.split(" "));
        List<String> resultArray = new ArrayList<>();
        sentenceArray.stream()
                 .forEach(word -> {
-                    if (word.length() > LIMIT_LENGTH){
+                    if (word.length() > limitLength) {
                         word = reverse(word);
                     }
                     resultArray.add(word);
@@ -35,10 +35,10 @@ public class SpinWords {
 
         int i = 0, j = word5.length() - 1;
         while (i < j) {
-            while ((i < j) && (!Character.isLetter(word5.charAt(i)))){
+            while ((i < j) && (!Character.isLetter(word5.charAt(i)))) {
                 i++;
             }
-            while ((i < j) && (!Character.isLetter(word5.charAt(j)))){
+            while ((i < j) && (!Character.isLetter(word5.charAt(j)))) {
                 j--;
             }
             char tmp = word5.charAt(i);
