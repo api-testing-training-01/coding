@@ -32,18 +32,19 @@ public class SpinWords {
 
     private String reverse(final String word5) {
         StringBuilder res = new StringBuilder(word5);
-
         int i = 0, j = word5.length() - 1;
         while (i < j) {
-            while ((i < j) && (!Character.isLetter(word5.charAt(i))))
+            if (!Character.isLetter(word5.charAt(i))) {
                 i++;
-            while ((i < j) && (!Character.isLetter(word5.charAt(j))))
+            } else if (!Character.isLetter(word5.charAt(j))) {
                 j--;
-            char tmp = word5.charAt(i);
-            res.setCharAt(i, word5.charAt(j));
-            res.setCharAt(j, tmp);
-            i++;
-            j--;
+            } else {
+                char tmp = word5.charAt(i);
+                res.setCharAt(i, word5.charAt(j));
+                res.setCharAt(j, tmp);
+                i++;
+                j--;
+            }
         }
         return String.valueOf(res);
     }
