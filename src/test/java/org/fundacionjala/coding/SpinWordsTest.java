@@ -6,9 +6,11 @@ import static org.junit.Assert.assertEquals;
 public class SpinWordsTest {
     @Test
     public void test() {
+        String expected2 = "Hey wollef sroirraw";
+        String expected3 = "Just gniddik [ereht is llits] one more";
         assertEquals("emocleW", new SpinWords().spinWords("Welcome"));
-        assertEquals("Hey wollef sroirraw", new SpinWords().spinWords("Hey fellow warriors"));
-        assertEquals("Just gniddik [ereht is llits] one more", new SpinWords().spinWords("Just kidding [there is still] one more"));
+        assertEquals(expected2, new SpinWords().spinWords("Hey fellow warriors"));
+        assertEquals(expected3, new SpinWords().spinWords("Just kidding [there is still] one more"));
     }
 
 }
