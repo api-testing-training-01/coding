@@ -20,12 +20,4 @@ public class ReverseStringTest {
         String process = ReverseString.reverse(input);
         Assert.assertNotEquals(expectedString, process);
     }
-
-    @Test
-    public void cleanDuplicatesString() {
-        String input = "alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta";
-        String expectedString = "alpha beta gamma delta";
-        String process = RemoveDuplicates.cleanUpDuplicates(input);
-        Assert.assertEquals(expectedString, process);
-    }
 }
